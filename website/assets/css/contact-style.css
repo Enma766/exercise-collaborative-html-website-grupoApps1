@@ -1,0 +1,25 @@
+/* Estilo para el contenedor del formulario */
+.container {
+    max-width: 600px;
+    border-radius: 3px;
+    background-color: #F5F5F5; /* Blanco más oscuro */
+    padding: 50px;
+    box-shadow: inset -10px 0px 10px #EAEAEA;
+    margin: 0 auto;
+}
+
+/* Estilo para las cajas de texto */
+input[type="email"],
+input[type="text"] {
+    display: flex;
+    align-items:stretch;
+    background-color: #ffffff; /* Fondo blanco */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#submit:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}
