@@ -1,25 +1,51 @@
-/* Estilo para el contenedor del formulario */
-.container {
-    max-width: 600px;
-    border-radius: 3px;
-    background-color: #F5F5F5; /* Blanco más oscuro */
-    padding: 50px;
-    box-shadow: inset -10px 0px 10px #EAEAEA;
-    margin: 0 auto;
+/* Contenedor principal del formulario */
+.form-container {
+    max-width: 500px; /* Ajusta el ancho del formulario */
+    margin: 20px auto; /* Centra horizontalmente */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Fondo blanco más oscuro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    display: grid;
+    gap: 15px; /* Espaciado entre los elementos */
 }
 
-/* Estilo para las cajas de texto */
-input[type="email"],
-input[type="text"] {
-    display: flex;
-    align-items:stretch;
-    background-color: #ffffff; /* Fondo blanco */
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    margin: 10px;
+/* Estilo para las etiquetas y campos */
+.item label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.item input[type="email"],
+.item textarea {
+    width: 100%; /* Ocupa todo el ancho disponible */
     padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #ffffff; /* Fondo blanco */
+    box-sizing: border-box;
 }
 
-#submit:hover {
+/* Estilo para el botón de envío */
+input[type="submit"] {
+    background-color: #007bff; /* Azul */
+    color: white; /* Texto blanco */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+input[type="submit"]:hover {
     background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Alineación de los elementos */
+.item {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
 }
