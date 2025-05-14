@@ -1,9 +1,9 @@
 /* Contenedor principal del formulario */
 .form-container {
-    max-width: 500px; /* Ajusta el ancho del formulario */
+    max-width: 700px; /* Ajusta el ancho del formulario */
     margin: 20px auto; /* Centra horizontalmente */
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid yellow;
     border-radius: 5px;
     background-color: #f9f9f9; /* Fondo blanco más oscuro */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
@@ -20,12 +20,12 @@
 
 .item input[type="email"],
 .item textarea {
-    width: 100%; /* Ocupa todo el ancho disponible */
+    width: 75%; /* Ocupa todo el ancho disponible */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #ffffff; /* Fondo blanco */
-    box-sizing: border-box;
+    box-sizing:unset;
 }
 
 /* Estilo para el botón de envío */
